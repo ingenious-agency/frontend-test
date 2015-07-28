@@ -30,9 +30,11 @@ Para entregar la prueba será necesario devolver este mismo directorio con la ap
 
 La forma más práctica de hacerlo es crear un [fork](https://github.com/ingsw-dev/frontend-test#fork-destination-box) de este repositorio y desarrollar allí la aplicación entregando la url del nuevo repositorio una vez finalizado el desarrollo.
 
-Otra forma de entrega es devolver este mismo directorio (en un zip) por email con la aplicación desarrollada dentro del directorio `frontend`. El mismo podrá no tener los directorios `node_modules` u otros que se provicionen automáticamente.
+Otra forma de entrega es devolver este mismo directorio (en un zip) por email con la aplicación desarrollada dentro de `frontend`. 
 
-En ambos casos se recomienda crear un archivo README dentro de [frontend](frontend) explicando la instalación de la aplicación y cualquier otra cosa que consideres pertinente.
+En ningún caso es necesario enviar o commitear el directorio `node_modules` u otros que se provicionen automáticamente.
+
+Para que sea más fácil la instalación y corrección te recomendamos crear un archivo README dentro de [frontend](frontend) con los pasos para instalar y levantar la aplicación que has desarrollado.
 
 ## Siguientes pasos
 
