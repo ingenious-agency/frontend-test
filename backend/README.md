@@ -17,7 +17,7 @@ Como se puede [leer en la letra](../instructions) la app a desarrollar es una ca
 
 ## Instalación
 
-Para instalar esta aplicación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
+Para instalar la aplicación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
 
 Una vez hecho esto para probar que los servicios que el backend provee funcionen correctamente podemos hacer `npm test`. 
 
@@ -69,7 +69,12 @@ El servidor quedará levantado por defecto en `http://localhost:3000`.
 
 ## Servicios expuestos
 
-La aplicación los siguientes servicios:
+La aplicación expone los siguientes servicios:
+
+* [Listar eventos](#listar-eventos)
+* [Eventos destacados](#eventos-destacados)
+* [Devolver evento por id](#devolver-evento-por-id)
+* [Crear evento](#crear-evento)
 
 ### Listar eventos
 Lista todos los eventos que hay en el sistema
@@ -144,7 +149,7 @@ GET /events/featured
 }
 ```
 
-### Devolver evento
+### Devolver evento por id
 Devuelve un evento por id. En caso de que el evento no exista devuelve 404.
 
 #### Endpoint
