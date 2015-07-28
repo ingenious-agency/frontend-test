@@ -17,9 +17,9 @@ Como se puede [leer en la letra](../instructions) la app a desarrollar es una ca
 
 ## Instalación
 
-Para instalar esta applicación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
+Para instalar esta aplicación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
 
-Una vez hecho esto para probar que los servicos que el backend provee funcionen correctamente podemos hacer `npm test`. 
+Una vez hecho esto para probar que los servicios que el backend provee funcionen correctamente podemos hacer `npm test`. 
 
 Si todo sale bien veremos una salida en la consola similar a la siguiente:
 
@@ -205,4 +205,3 @@ Si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: 
 ## Siguiente paso
 
 Una vez que tengas el backend andando podrás [leer la letra del problema](../instructions).
-

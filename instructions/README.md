@@ -1,6 +1,6 @@
 # Prueba de Ingenious Softworks para candidatos - Letra
 
-Hola **candidato**, Esperamos que hayas seguido los pasos para [instalar y probar](../backend) la aplicación backend, si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com).
+Hola **candidato**, esperamos que hayas seguido los pasos para [instalar y probar](../backend) la aplicación backend, si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com).
 
 ## Índice
 * [Letra](#letra)
@@ -11,7 +11,7 @@ Hola **candidato**, Esperamos que hayas seguido los pasos para [instalar y proba
 
 ## Letra
 
-Se pide desarrollar una Single Page Application que liste y permita crear eventos. El sistema final será una cartelera de eventos muy simple.
+Se pide desarrollar una Single Page Application que lista y permite crear eventos. El sistema final será una cartelera de eventos muy simple.
 
 Para desarrollarla proveemos un [backend](../backend) con todos los servicios necesarios.
 
@@ -45,7 +45,7 @@ Como un usuario en la página principal debo ver un listado de eventos destacado
 
 ### Crear evento
 
-Como un usuario debo poder crear un evento con todos sus campos.
+Como un usuario debería poder crear un evento con todos sus campos.
 
 * Título
 * Descripción
@@ -67,11 +67,11 @@ No se especifica ninguna versión mínima para las mismas pero es de esperarse q
 
 ## Evaluación
 
-La prueba trata de evaluar como un candidato maneja cierta tecnología pero además cómo estructura su código y cómo resuelve los probelmas que se le presentan. 
+La prueba trata de evaluar como un candidato maneja cierta tecnología pero además cómo estructura su código y cómo resuelve los problemas que se le presentan. 
 
-Con esto queremos decir que si bien la tecnología en cual se realize la aplicación es importante, también lo es desarrollarla con una herramienta con la que el candidato se sienta cómodo y pueda ser eficiente.
+Con esto queremos decir que si bien la tecnología en cual se realice la aplicación es importante, también lo es desarrollarla con una herramienta con la que el candidato se sienta cómodo y pueda ser eficiente.
 
-De nada sirve entregar una aplicación "andando" en React que no utilize las características del framework, el mismo caso se da si se eligen otros frameworks.
+De nada sirve entregar una aplicación "andando" en React que no utilice las características del framework, el mismo caso se da si se eligen otros frameworks.
 
 ## FAQ
 
@@ -79,7 +79,7 @@ De nada sirve entregar una aplicación "andando" en React que no utilize las car
 
 Sí, es posible modificar la aplicación backend. Recuerda enviarnos la versión modificada para que podamos probarla.
 
-### Hay algo en la letra que no quedó claro pero tengo dificultades para comunicarme por email
+### Hay algo en la letra que no quedó claro pero tengo dificultades para comunicarse por email
 
 Si estás en esta situación asume lo que te sea más cómodo y continúa con la prueba. Si es posible deja constancia de la decisión tomada para poder evaluar la prueba en base a ella.
 
@@ -95,11 +95,11 @@ Lo mejor que puedes hacer es enviarnos un correo electrónico a [gchertok@ingsw.
 
 De nuevo, lo ideal es enviarnos un correo electrónico a [gchertok@ingsw.com](mailto: gchertok@ingsw.com) y trataremos de aclarar la duda.
 
-### Me sobró tiempo y quisiera agregarle funcionalidades a la applicación
+### Me sobró tiempo y quisiera agregarle funcionalidades a la aplicación
 
 Si bien las funcionalidades extra son un plus preferimos que las presentes estén lo más completas posibles. Si te ha sobrado tiempo sería interesante que agregaras **tests** y escribieras **documentación** sobre la app que has desarrollado.
 
-### Soy proeficiente en más de una de las tecnologías mencionadas, cuál eligo?
+### Soy proficiente en más de una de las tecnologías mencionadas, cuál elijo?
 
 Si dudas en cual tecnología desarrollar y eres capaz de manejar más de una de ellas el orden de preferencia es: Ember, React y por último Angular.
 
