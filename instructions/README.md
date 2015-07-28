@@ -1,11 +1,11 @@
 # Prueba de Ingenious Softworks para candidatos - Letra
 
-Hola **candidato**, Esperamos que hayas seguido los pasos para [instalar y probar](../backend/README#instalacion) la aplicación backend, si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com).
+Hola **candidato**, Esperamos que hayas seguido los pasos para [instalar y probar](../backend) la aplicación backend, si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com).
 
 ## Índice
 * [Letra](#letra)
 * [Requerimientos no funcionales](#requerimientos-no-funcionales)
-* [Evaluación](#evaluacion)
+* [Evaluación](#evaluación)
 * [Preguntas Frecuentes](#faq)
 * [Siguiente paso](#siguiente-paso)
 
@@ -13,7 +13,7 @@ Hola **candidato**, Esperamos que hayas seguido los pasos para [instalar y proba
 
 Se pide desarrollar una Single Page Application que liste y permita crear eventos. El sistema final será una cartelera de eventos muy simple.
 
-Para desarrollarla proveemos un [backend](../backend) con todos los [servicios necesarios](../backend/README#servicios-expuestos)
+Para desarrollarla proveemos un [backend](../backend) con todos los servicios necesarios.
 
 ## Historias de usuario
 
@@ -97,7 +97,7 @@ De nuevo, lo ideal es enviarnos un correo electrónico a [gchertok@ingsw.com](ma
 
 ### Me sobró tiempo y quisiera agregarle funcionalidades a la applicación
 
-Si bien las funcionalidades extra son un plus preferimos que las que estén presentes estén lo más completas posibles. Si te ha sobrado tiempo sería interesante que agregaras **tests** y escribieras **documentación** sobre la app que has desarrollado.
+Si bien las funcionalidades extra son un plus preferimos que las presentes estén lo más completas posibles. Si te ha sobrado tiempo sería interesante que agregaras **tests** y escribieras **documentación** sobre la app que has desarrollado.
 
 ### Soy proeficiente en más de una de las tecnologías mencionadas, cuál eligo?
 

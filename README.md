@@ -28,7 +28,7 @@ La carpeta [instructions](instructions) contiene la letra del problema y respues
 
 Para entregar la prueba será necesario devolver este mismo directorio con la aplicación desarrollada en la capreta [frontend](frontend) e instrucciones para su instalación si existieran.
 
-La forma más práctica de hacerlo es crear un fork de este repositorio y desarrollar la aplicación allí entregando la url del mismo una vez que se quiera hacer la entrega.
+La forma más práctica de hacerlo es crear un fork de este repositorio y desarrollar la aplicación allí entregando la url del mismo una vez finalizado el desarrollo.
 
 Otra forma de entrega es devolver un archivo zip por mail con la aplicación desarrollada. El mismo podrá no tener los directorios `node_modules` u otros que se provicionen automáticamente.
 

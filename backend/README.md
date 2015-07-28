@@ -4,7 +4,7 @@ Como se puede [leer en la letra](../instructions) la app a desarrollar es una ca
 
 ## Índice
 * [Pre requisitos](#pre-requisitos)
-* [Instalación](#instalacion)
+* [Instalación](#instalación)
 * [Servidor de desarrollo](#servidor-de-desarrollo)
 * [Servicios expuestos](#servicios-expuestos)
 * [Dudas](#dudas)
@@ -17,7 +17,7 @@ Como se puede [leer en la letra](../instructions) la app a desarrollar es una ca
 
 ## Instalación
 
-Para instalar esta app simplemente clonarse este repositorio, que cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
+Para instalar esta app=licación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
 
 Una vez hecho esto para probar que los servicos que el backend provee funcionen correctamente podemos hacer `npm test`. 
 
@@ -200,7 +200,7 @@ POST /events
 
 ## Dudas
 
-Si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com) y te ayudaremos con cualquier problema que tengas, también puedes [abrir un issue](issues/new) y trataremos de responderte allí.
+Si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com) y te ayudaremos con cualquier problema que tengas, también puedes [abrir un issue](https://github.com/ingsw-dev/frontend-test/issues/new) y trataremos de responderte allí.
 
 ## Siguiente paso
 
