@@ -6,7 +6,7 @@ Por favor, te pedimos que completes la lectura de este README antes de comenzarl
 
 ## Sobre la prueba
 
-La prueba consiste en [desarrollar una Single Page Application](SPA) utilizando un backend ya provisto -que se encuentra en este mismo repositorio-.
+La prueba consiste en desarrollar una **Single Page Application** utilizando un backend ya provisto -que se encuentra en este mismo repositorio-.
 
 ## Sobre el repositorio
 
