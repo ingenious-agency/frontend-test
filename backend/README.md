@@ -17,7 +17,7 @@ Como se puede [leer en la letra](../instructions) la app a desarrollar es una ca
 
 ## Instalación
 
-Para instalar esta app=licación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
+Para instalar esta applicación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
 
 Una vez hecho esto para probar que los servicos que el backend provee funcionen correctamente podemos hacer `npm test`. 
 

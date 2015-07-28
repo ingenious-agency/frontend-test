@@ -101,7 +101,7 @@ Si bien las funcionalidades extra son un plus preferimos que las presentes esté
 
 ### Soy proeficiente en más de una de las tecnologías mencionadas, cuál eligo?
 
-Si dudas en cual tecnología desarrollar y eres capaz de manejar al menos más de una de ellas el orden de preferencia es: Ember, React y por último Angular.
+Si dudas en cual tecnología desarrollar y eres capaz de manejar más de una de ellas el orden de preferencia es: Ember, React y por último Angular.
 
 ## Siguiente paso
 
