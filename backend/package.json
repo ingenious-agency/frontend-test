@@ -1,0 +1,29 @@
+{
+  "name": "ingsw-frontend-test",
+  "version": "1.0.0",
+  "description": "A backend app that has events and their description to be used as a backend server for the technical interview at Ingenious Softworks",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "node test",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ingsw-dev/frontend-test"
+  },
+  "author": "Gabriel Chertok <gchertok@ingsw.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ingsw/frontend-test/issues"
+  },
+  "homepage": "https://github.com/ingsw/frontend-test#readme",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.3.8",
+    "supertest": "^1.0.1",
+    "tape": "^4.0.1"
+  }
+}
