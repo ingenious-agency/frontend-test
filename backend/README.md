@@ -1,13 +1,14 @@
 # Prueba de Ingenious Softworks para candidatos - Aplicación de backend
 
-Como se puede [leer en la letra](../instructions) la app a desarrollar es una cartelera de eventos con funcionalidades básicas. Para ello es necesario tener un backend que provea las operaciones básicas para listar y crear nuevos eventos, esta aplicación hacee xactamente eso.
+Como se puede [leer en la letra](../instructions) la app a desarrollar es una cartelera de eventos con funcionalidades básicas. Para ello es necesario tener un backend que provea las operaciones básicas para listar y crear nuevos eventos, esta aplicación hace exactamente eso.
 
 ## Índice
 * [Pre requisitos](#pre-requisitos)
 * [Instalación](#instalacion)
-* [Servidor de desarrolo](#servidor-de-desarrolo)
+* [Servidor de desarrollo](#servidor-de-desarrollo)
 * [Servicios expuestos](#servicios-expuestos)
 * [Dudas](#dudas)
+* [Siguiente paso](#siguiente-paso)
 
 ## Pre requisitos
 
@@ -16,7 +17,7 @@ Como se puede [leer en la letra](../instructions) la app a desarrollar es una ca
 
 ## Instalación
 
-Para instalar esta app simplemente hay que cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
+Para instalar esta app simplemente clonarse este repositorio, que cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
 
 Una vez hecho esto para probar que los servicos que el backend provee funcionen correctamente podemos hacer `npm test`. 
 
@@ -32,19 +33,32 @@ TAP version 13
 # GET /events returns all events
 ok 1 No error
 ok 2 should be equivalent
-# GET /events/:id returns the correct event
+# GET /events/featured returns all featured events
 ok 3 No error
 ok 4 should be equivalent
-# GET /events/:id returns 404 when the event doesn't exists
-# POST /events creates an event and returns it with an id
+# GET /events/:id returns the correct event
 ok 5 No error
 ok 6 should be equivalent
+# GET /events/:id returns 404 when the event doesn't exists
+# POST /events creates an event and returns it with an id
+ok 7 No error
+ok 8 should be equivalent
 
-1..6
-# tests 6
-# pass  6
+1..8
+# tests 8
+# pass  8
 
 # ok
+```
+
+### Resumiendo
+
+```
+$ git clone git@github.com:ingsw-dev/frontend-test.git
+$ cd frontend-test
+$ cd backend
+$ npm install
+$ npm test
 ```
 
 ## Servidor de desarrollo
@@ -69,31 +83,31 @@ GET /events
   "events": [
     {
       "id": 1,
-      "title": "24 Festival de Cine para Ni\u00f1os y J\u00f3venes \u2013 Divercine",
-      "eventImage": "http:\/\/www.cartelera.com.uy\/imagenes_espectaculos\/moviedetail13\/17511.jpg",
-      "description": "Del lunes 27 de julio al s\u00e1bado 1\u00ba de agosto se desarrolla en el Auditorio del SODRE Nelly Goiti\u00f1o (18 de Julio y Rio Branco) el 24 Festival de Cine para Ni\u00f1os y J\u00f3venes - Divercine. La programaci\u00f3n, que incluye pel\u00edculas de largo, medio y cortometraje de varias partes del mundo, est\u00e1 dividida en tres franjas de horarios cada d\u00eda, de acuerdo a las edades del p\u00fablico a las que van dirigidas: a las 13 horas a partir de 3 a\u00f1os de edad; a las 14 horas a partir de los 6 a\u00f1os de edad; y desde las 15 se programan los medio y largometrajes para ni\u00f1os m\u00e1s grandes y adolescentes.",
+      "title": "24 Festival de Cine para Niños y Jóvenes – Divercine",
+      "eventImage": "http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg",
+      "description": "Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.",
       "dates": [
-        "07\/27\/2015 13:00",
-        "07\/28\/2015 13:00",
-        "07\/29\/2015 13:00",
-        "07\/30\/2015 13:00",
-        "07\/31\/2015 13:00",
-        "07\/1\/2015 13:00"
+        "07/27/2015 13:00",
+        "07/28/2015 13:00",
+        "07/29/2015 13:00",
+        "07/30/2015 13:00",
+        "07/31/2015 13:00",
+        "07/1/2015 13:00"
       ],
       "location": "Auditorio del SODRE"
     },
     {
       "id": 2,
-      "title": "24 Festival de Cine para Ni\u00f1os y J\u00f3venes \u2013 Divercine",
-      "eventImage": "http:\/\/www.cartelera.com.uy\/imagenes_espectaculos\/moviedetail13\/17511.jpg",
-      "description": "Del lunes 27 de julio al s\u00e1bado 1\u00ba de agosto se desarrolla en el Auditorio del SODRE Nelly Goiti\u00f1o (18 de Julio y Rio Branco) el 24 Festival de Cine para Ni\u00f1os y J\u00f3venes - Divercine. La programaci\u00f3n, que incluye pel\u00edculas de largo, medio y cortometraje de varias partes del mundo, est\u00e1 dividida en tres franjas de horarios cada d\u00eda, de acuerdo a las edades del p\u00fablico a las que van dirigidas: a las 13 horas a partir de 3 a\u00f1os de edad; a las 14 horas a partir de los 6 a\u00f1os de edad; y desde las 15 se programan los medio y largometrajes para ni\u00f1os m\u00e1s grandes y adolescentes.",
+      "title": "24 Festival de Cine para Niños y Jóvenes – Divercine",
+      "eventImage": "http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg",
+      "description": "Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.",
       "dates": [
-        "07\/27\/2015 13:00",
-        "07\/28\/2015 13:00",
-        "07\/29\/2015 13:00",
-        "07\/30\/2015 13:00",
-        "07\/31\/2015 13:00",
-        "07\/1\/2015 13:00"
+        "07/27/2015 13:00",
+        "07/28/2015 13:00",
+        "07/29/2015 13:00",
+        "07/30/2015 13:00",
+        "07/31/2015 13:00",
+        "07/1/2015 13:00"
       ],
       "location": "Auditorio del SODRE"
     }
@@ -112,17 +126,17 @@ GET /events/featured
 {
   "events": [
     {
-      "id": 2,
-      "title": "24 Festival de Cine para Ni\u00f1os y J\u00f3venes \u2013 Divercine",
-      "eventImage": "http:\/\/www.cartelera.com.uy\/imagenes_espectaculos\/moviedetail13\/17511.jpg",
-      "description": "Del lunes 27 de julio al s\u00e1bado 1\u00ba de agosto se desarrolla en el Auditorio del SODRE Nelly Goiti\u00f1o (18 de Julio y Rio Branco) el 24 Festival de Cine para Ni\u00f1os y J\u00f3venes - Divercine. La programaci\u00f3n, que incluye pel\u00edculas de largo, medio y cortometraje de varias partes del mundo, est\u00e1 dividida en tres franjas de horarios cada d\u00eda, de acuerdo a las edades del p\u00fablico a las que van dirigidas: a las 13 horas a partir de 3 a\u00f1os de edad; a las 14 horas a partir de los 6 a\u00f1os de edad; y desde las 15 se programan los medio y largometrajes para ni\u00f1os m\u00e1s grandes y adolescentes.",
+      "id": 1,
+      "title": "24 Festival de Cine para Niños y Jóvenes – Divercine",
+      "eventImage": "http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg",
+      "description": "Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.",
       "dates": [
-        "07\/27\/2015 13:00",
-        "07\/28\/2015 13:00",
-        "07\/29\/2015 13:00",
-        "07\/30\/2015 13:00",
-        "07\/31\/2015 13:00",
-        "07\/1\/2015 13:00"
+        "07/27/2015 13:00",
+        "07/28/2015 13:00",
+        "07/29/2015 13:00",
+        "07/30/2015 13:00",
+        "07/31/2015 13:00",
+        "07/1/2015 13:00"
       ],
       "location": "Auditorio del SODRE"
     }
@@ -141,16 +155,16 @@ GET /events/:id
 {
   "event": {
     "id": 1,
-    "title": "24 Festival de Cine para Ni\u00f1os y J\u00f3venes \u2013 Divercine",
-    "eventImage": "http:\/\/www.cartelera.com.uy\/imagenes_espectaculos\/moviedetail13\/17511.jpg",
-    "description": "Del lunes 27 de julio al s\u00e1bado 1\u00ba de agosto se desarrolla en el Auditorio del SODRE Nelly Goiti\u00f1o (18 de Julio y Rio Branco) el 24 Festival de Cine para Ni\u00f1os y J\u00f3venes - Divercine. La programaci\u00f3n, que incluye pel\u00edculas de largo, medio y cortometraje de varias partes del mundo, est\u00e1 dividida en tres franjas de horarios cada d\u00eda, de acuerdo a las edades del p\u00fablico a las que van dirigidas: a las 13 horas a partir de 3 a\u00f1os de edad; a las 14 horas a partir de los 6 a\u00f1os de edad; y desde las 15 se programan los medio y largometrajes para ni\u00f1os m\u00e1s grandes y adolescentes.",
+    "title": "24 Festival de Cine para Niños y Jóvenes – Divercine",
+    "eventImage": "http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg",
+    "description": "Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.",
     "dates": [
-      "07\/27\/2015 13:00",
-      "07\/28\/2015 13:00",
-      "07\/29\/2015 13:00",
-      "07\/30\/2015 13:00",
-      "07\/31\/2015 13:00",
-      "07\/1\/2015 13:00"
+      "07/27/2015 13:00",
+      "07/28/2015 13:00",
+      "07/29/2015 13:00",
+      "07/30/2015 13:00",
+      "07/31/2015 13:00",
+      "07/1/2015 13:00"
     ],
     "location": "Auditorio del SODRE"
   }
@@ -167,24 +181,28 @@ POST /events
 ```json
 {
   "event": {
-    "title": "24 Festival de Cine para Ni\u00f1os y J\u00f3venes \u2013 Divercine",
-    "eventImage": "http:\/\/www.cartelera.com.uy\/imagenes_espectaculos\/moviedetail13\/17511.jpg",
-    "description": "Del lunes 27 de julio al s\u00e1bado 1\u00ba de agosto se desarrolla en el Auditorio del SODRE Nelly Goiti\u00f1o (18 de Julio y Rio Branco) el 24 Festival de Cine para Ni\u00f1os y J\u00f3venes - Divercine. La programaci\u00f3n, que incluye pel\u00edculas de largo, medio y cortometraje de varias partes del mundo, est\u00e1 dividida en tres franjas de horarios cada d\u00eda, de acuerdo a las edades del p\u00fablico a las que van dirigidas: a las 13 horas a partir de 3 a\u00f1os de edad; a las 14 horas a partir de los 6 a\u00f1os de edad; y desde las 15 se programan los medio y largometrajes para ni\u00f1os m\u00e1s grandes y adolescentes.",
+    "id": 1,
+    "title": "24 Festival de Cine para Niños y Jóvenes – Divercine",
+    "eventImage": "http://www.cartelera.com.uy/imagenes_espectaculos/moviedetail13/17511.jpg",
+    "description": "Del lunes 27 de julio al sábado 1º de agosto se desarrolla en el Auditorio del SODRE Nelly Goitiño (18 de Julio y Rio Branco) el 24 Festival de Cine para Niños y Jóvenes - Divercine. La programación, que incluye películas de largo, medio y cortometraje de varias partes del mundo, está dividida en tres franjas de horarios cada día, de acuerdo a las edades del público a las que van dirigidas: a las 13 horas a partir de 3 años de edad; a las 14 horas a partir de los 6 años de edad; y desde las 15 se programan los medio y largometrajes para niños más grandes y adolescentes.",
     "dates": [
-      "07\/27\/2015 13:00",
-      "07\/28\/2015 13:00",
-      "07\/29\/2015 13:00",
-      "07\/30\/2015 13:00",
-      "07\/31\/2015 13:00",
-      "07\/1\/2015 13:00"
+      "07/27/2015 13:00",
+      "07/28/2015 13:00",
+      "07/29/2015 13:00",
+      "07/30/2015 13:00",
+      "07/31/2015 13:00",
+      "07/1/2015 13:00"
     ],
-    "location": "Auditorio del SODRE",
-    "id": 3
+    "location": "Auditorio del SODRE"
   }
 }
 ```
 
 ## Dudas
 
-Si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com) y te ayudaremos con cualquier problema que tengas.
+Si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com) y te ayudaremos con cualquier problema que tengas, también puedes [abrir un issue](issues/new) y trataremos de responderte allí.
+
+## Siguiente paso
+
+Una vez que tengas el backend andando podrás [leer la letra del problema](../instructions).
 

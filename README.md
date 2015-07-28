@@ -1,6 +1,6 @@
 # Prueba de Ingenious Softworks para candidatos
 
-Bienvenido **candidato**! Estás viendo el repositorio que contiene todos los materiales necesarios para realizar la prueba. La misma deberá entregarse 72hs después de recibido la notifiación por correo electrónico.
+Bienvenido **candidato**, Estás viendo el repositorio que contiene todos los materiales necesarios para realizar la prueba. La misma deberá entregarse 72hs después de recibido la notifiación por correo electrónico.
 
 Por favor, te pedimos que completes la lectura de este README antes de comenzarla ya que muchas de las dudas que puedas tener serán contestadas.
 
@@ -28,7 +28,7 @@ La carpeta [instructions](instructions) contiene la letra del problema y respues
 
 Para entregar la prueba será necesario devolver este mismo directorio con la aplicación desarrollada en la capreta [frontend](frontend) e instrucciones para su instalación si existieran.
 
-La forma más práctica de hacerlo es crear un fork de este repositorio y desarrollar la aplicación allí entregando la url del mismo una vez que se haga la entrega de la misma.
+La forma más práctica de hacerlo es crear un fork de este repositorio y desarrollar la aplicación allí entregando la url del mismo una vez que se quiera hacer la entrega.
 
 Otra forma de entrega es devolver un archivo zip por mail con la aplicación desarrollada. El mismo podrá no tener los directorios `node_modules` u otros que se provicionen automáticamente.
 
