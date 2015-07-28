@@ -29,6 +29,8 @@ Como un usuario haciendo click en el botón compartir de un evento debo poder co
 
 El mensaje de twitter deberá ser el siguiente: "Iré al NOMBRE DEL EVENTO @ FECHA DEL EVENTO LINK DEL EVENTO".
 
+![Compartir Evento](images/share-event.png)
+
 ### Ver detalle del evento
 
 Como un usuario haciendo click en un evento debo navegar a otra página de detalle que liste, además del nombre del evento el resto de sus atributos.
