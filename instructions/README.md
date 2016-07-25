@@ -59,6 +59,7 @@ Como un usuario debería poder crear un evento con todos sus campos.
 
 La aplicación cliente deberá estar escrita en alguna de las siguientes tecnologías:
 
+* JavaScript
 * Ember
 * Angular
 * React
