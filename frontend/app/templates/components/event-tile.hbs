@@ -1,0 +1,16 @@
+<div class="tile tile-centered">
+  <div class="tile-icon col-2 text-center">
+      <img class="tile-image img-fit-cover" src={{event.eventImage}} />
+  </div>
+<div class="tile-content col-10">
+    <div class="tile-title text-ellipsis col-7 float-left mb-5">
+    {{#link-to "events.view" event.id }}
+        {{event.title}}
+    {{/link-to}}
+    </div>
+    <div class="tile-title col-5 text-right float-right mb-5">{{ date.date }} @ {{ date.time }}</div>
+    <div class="tile-subtitle text-ellipsis col-12 mb-5">{{event.description}}</div>
+    <div class="tile-subtitle text-right col-12">{{event.location}}</div>
+  </div>
+</div>
+<div class="divider"></div>

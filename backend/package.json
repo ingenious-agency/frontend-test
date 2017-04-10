@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ingsw/frontend-test#readme",
   "dependencies": {
     "body-parser": "^1.13.2",
+    "cors": "^2.8.3",
     "express": "^4.13.1"
   },
   "devDependencies": {

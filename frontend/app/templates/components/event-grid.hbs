@@ -1,0 +1,12 @@
+
+<h4>Recent Events</h4>
+<div class="divider"></div>
+<div class="container">
+    <div class="columns">
+    {{#each events as |event|}}
+        <div class="column col-md-6 col-sm-12">
+        {{event-panel event=event eventURL=eventURL}}
+        </div>
+    {{/each}}
+    </div>
+</div>

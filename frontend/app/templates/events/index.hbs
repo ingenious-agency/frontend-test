@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="columns">
+        <div class="column col-12">
+            <h1>Events</h1>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column col-xs-12 col-8">
+            {{ event-grid events=model.events eventURL=model.eventURL }}
+        </div>
+        <div class="column hide-xs col-4">
+            {{ event-highlights events=model.featured }}
+        </div>
+    </div>
+    {{#link-to "events.new" class="btn btn-lg btn-primary btn-action circle btn-call-to-arms tooltip tooltip-left" data-tooltip="Add new Event" }}
+        <i class="icon icon-plus"></i>
+    {{/link-to}}
+</div>

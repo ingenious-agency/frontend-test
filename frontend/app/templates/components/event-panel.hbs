@@ -1,0 +1,39 @@
+<div class="card event-card">
+    <div class="card-header abs">
+        <h6 class="card-title float-left">{{date.date}} @ {{date.time}}</h6>
+        <div class="popover popover-bottom float-right event-share">
+            <button class="btn btn-link ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+                    <path d="M36 32.17c-1.52 0-2.89.59-3.93 1.54L17.82 25.4c.11-.45.18-.92.18-1.4s-.07-.95-.18-1.4l14.1-8.23c1.07 1 2.5 1.62 4.08 1.62 3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6c0 .48.07.95.18 1.4l-14.1 8.23c-1.07-1-2.5-1.62-4.08-1.62-3.31 0-6 2.69-6 6s2.69 6 6 6c1.58 0 3.01-.62 4.08-1.62l14.25 8.31c-.1.42-.16.86-.16 1.31 0 3.22 2.61 5.83 5.83 5.83s5.83-2.61 5.83-5.83-2.61-5.83-5.83-5.83z"/>
+                </svg>
+            </button>
+            <div class="popover-container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="{{twitterTwit}}" class="btn btn-link twitter-share-button" data-size="large" data-text={{twitterText}} data-url="{{twitterURL}}"  >
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 256 256" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g style2="fill:#00aced" transform="matrix(.14451 0 0 -.14476 26.55489 210.93925)">
+                                <path d="M 877,1126 C 752,1081 673,965 682,838 l 3,-49 -50,6 C 453,818 294,896 159,1027 l -66,65 -17,-48 C 40,937 63,824 138,748 c 40,-42 31,-48 -38,-23 -24,8 -45,14 -47,11 -7,-7 17,-98 36,-134 26,-50 79,-99 137,-128 l 49,-23 -58,-1 c -56,0 -58,-1 -52,-22 20,-65 99,-134 187,-164 l 62,-21 -54,-32 C 280,165 186,139 92,137 47,136 10,132 10,129 10,119 132,63 203,41 416,-24 669,4 859,115 c 135,79 270,236 333,388 34,81 68,229 68,300 0,46 3,52 59,107 33,32 64,67 70,77 10,19 9,19 -42,2 -85,-30 -97,-26 -55,19 31,32 68,90 68,107 0,3 -15,-2 -32,-11 -18,-10 -58,-25 -88,-34 l -54,-17 -49,33 c -27,18 -65,38 -85,44 -51,14 -129,12 -175,-4 z"/>
+                                </g>
+                            </svg>
+                            Twit this event
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-image">
+        <div class="image-overlay"></div>
+        <img src="{{event.eventImage}}" class="img-fit-cover img-responsive" />
+    </div>
+    <div class="card-body event-name abs card-title">
+        <h4>{{event.title}}</h4>
+    </div>
+    <div class="card-footer">
+        {{!--<a class="btn btn-primary">View</button>--}}
+        {{#link-to "events.view" event.id class="btn btn-primary"}}
+            View
+        {{/link-to}}
+    </div>
+</div>
