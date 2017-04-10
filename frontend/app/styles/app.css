@@ -1,0 +1,151 @@
+div.datedropper.spectre-datedropper {
+  border-radius: .2rem;
+  width: 140px;
+}
+div.datedropper.spectre-datedropper .picker {
+  border-radius: .2rem;
+  box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.1);
+}
+div.datedropper.spectre-datedropper .pick-l {
+  border-bottom-left-radius: .2rem;
+  border-bottom-right-radius: .2rem;
+}
+div.datedropper.spectre-datedropper:before,
+div.datedropper.spectre-datedropper .pick-submit,
+div.datedropper.spectre-datedropper .pick-lg-b .pick-sl:before,
+div.datedropper.spectre-datedropper .pick-m,
+div.datedropper.spectre-datedropper .pick-lg-h {
+  background-color: #4452c0;
+}
+div.datedropper.spectre-datedropper .pick-y.pick-jump,
+div.datedropper.spectre-datedropper .pick li span,
+div.datedropper.spectre-datedropper .pick-lg-b .pick-wke,
+div.datedropper.spectre-datedropper .pick-btn,
+.td-clock .td-time span.on {
+  color: #4452c0;
+}
+div.datedropper.spectre-datedropper .picker,
+div.datedropper.spectre-datedropper .pick-l {
+  background-color: #fff;
+}
+div.datedropper.spectre-datedropper .picker,
+div.datedropper.spectre-datedropper .pick-arw,
+div.datedropper.spectre-datedropper .pick-l,
+.td-clock {
+  color: #727e96;
+}
+div.datedropper.spectre-datedropper .pick-m,
+div.datedropper.spectre-datedropper .pick-m .pick-arw,
+div.datedropper.spectre-datedropper .pick-lg-h,
+div.datedropper.spectre-datedropper .pick-lg-b .pick-sl,
+div.datedropper.spectre-datedropper .pick-submit {
+  color: #fff;
+}
+div.datedropper.spectre-datedropper.picker-tiny:before,
+div.datedropper.spectre-datedropper.picker-tiny .pick-m {
+  background-color: #fff;
+}
+div.datedropper.spectre-datedropper.picker-tiny .pick-m,
+div.datedropper.spectre-datedropper.picker-tiny .pick-m .pick-arw {
+  color: #727e96;
+}
+div.datedropper.spectre-datedropper.picker-lkd .pick-submit {
+  background-color: #fff;
+  color: #727e96;
+}
+.td-clock {
+    box-shadow: 0 0 0 1px #4452c0, 0 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.full-height {
+    height: 100%;
+}
+
+textarea.form-input.full-height {
+    resize: none;
+    height: 87%;
+}
+
+.btn-call-to-arms {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.table td,
+.table th {
+    padding: 0.8rem 1rem;
+}
+
+.table td .btn-link {
+    height: 2.2rem;
+    padding: .1rem;
+}
+
+.event-card {
+    position: relative;
+}
+
+.event-card .abs {
+    width: 100%;
+    z-index: 2;
+}
+
+.event-card .card-title {
+    color: white;
+}
+
+.event-card .card-body.event-name {
+    bottom: 63px;
+}
+
+.event-card .abs svg {
+    fill: white;
+}
+
+.event-card .card-image {
+    padding-top: 0;
+    position: relative;
+    min-height: 54px;
+}
+
+.card-image .image-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-image img {
+    width: 100%;
+    height: 250px;
+}
+
+.popover.event-share .popover-container {
+    width: auto;
+}
+
+.popover.popover-bottom.event-share:hover .popover-container{
+    transform: translate(-85%, 0) scale(1);
+}
+
+.event-share > .btn-link {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.popover.event-share svg {
+    /*fill: #727e96;*/
+    vertical-align: middle;
+}
+
+.popover.event-share .menu svg {
+    fill: #727e96;
+    margin-top: -0.5rem;
+}
+
+.tile-image {
+    height: 70px;
+    width: 100%;
+}
