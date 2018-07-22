@@ -1,6 +1,6 @@
 # Prueba de Ingenious Softworks para candidatos
 
-Bienvenido **candidato**, estás viendo el repositorio que contiene todos los materiales necesarios para realizar la prueba. La misma deberá entregarse 3 días después de recibida la notificación por correo electrónico.
+Bienvenido **candidato**, estás viendo el repositorio que contiene todos los materiales necesarios para realizar la prueba.
 
 Por favor, te pedimos que completes la lectura de este README antes de comenzarla ya que muchas de las dudas que puedas tener serán contestadas.
 
