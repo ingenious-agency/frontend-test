@@ -21,6 +21,20 @@ var postEvent = {
   "location": "Auditorio del SODRE"
 };
 
+test('GET /events support CORS', function (t) {
+  t.plan(1);
+  request(app)
+    .get('/events')
+    .expect('Content-Type', /json/)
+    .expect(200)
+    .expect('Access-Control-Allow-Origin', '*')
+    .end(function (err, res) {
+      t.error(err, 'No error');
+
+      t.end();
+    });
+});
+
 test('GET /events returns all events', function (t) {
   t.plan(2);
   request(app)
@@ -79,7 +93,7 @@ test('POST /events creates an event and returns it with an id', function (t) {
     .send({event: postEvent})
     .end(function (err, res) {
       t.error(err, 'No error');
-      
+
       postEvent.id = 3;
       t.same(res.body, {event: postEvent});
 

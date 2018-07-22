@@ -1,6 +1,6 @@
 {
   "name": "ingsw-frontend-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A backend app that has events and their description to be used as a backend server for the technical interview at Ingenious Softworks",
   "main": "app/index.js",
   "scripts": {
@@ -18,11 +18,12 @@
   },
   "homepage": "https://github.com/ingsw/frontend-test#readme",
   "dependencies": {
-    "body-parser": "^1.13.2",
-    "express": "^4.13.1"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
   },
   "devDependencies": {
-    "supertest": "^1.0.1",
-    "tape": "^4.0.1"
+    "supertest": "^3.1.0",
+    "tape": "^4.9.1"
   }
 }
