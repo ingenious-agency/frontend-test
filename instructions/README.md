@@ -59,10 +59,12 @@ Como un usuario debería poder crear un evento con todos sus campos.
 
 La aplicación cliente deberá estar escrita en alguna de las siguientes tecnologías:
 
-* JavaScript
+* JavaScript vanilla
 * Ember
 * Angular
 * React
+* Vue
+* Cualquier otro framework JS
 
 No se especifica ninguna versión mínima para las mismas pero es de esperarse que sean versiones estables y soportadas, no es necesario hacer la aplicación en el último release de cada tecnología pero si es un release con soporte.
 
@@ -102,7 +104,7 @@ Si bien las funcionalidades extra son un plus preferimos que las presentes esté
 
 ### Soy proficiente en más de una de las tecnologías mencionadas, cuál elijo?
 
-Si dudas en cual tecnología desarrollar y eres capaz de manejar más de una de ellas el orden de preferencia es: Ember, React y por último Angular.
+Si dudas en cual tecnología desarrollar y eres capaz de manejar más de una de ellas nuestra recomendación es que desarrolles con la que te seintas más cómodo.
 
 ## Siguiente paso
 
