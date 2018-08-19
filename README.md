@@ -1,16 +1,16 @@
-# Prueba de Ingenious Softworks para candidatos
+# Ingenious test for candidates
 
-Bienvenido **candidato**, estás viendo el repositorio que contiene todos los materiales necesarios para realizar la prueba.
+Welcome **candidate**, this is the repository with all the needed material to complete your test.
 
-Por favor, te pedimos que completes la lectura de este README antes de comenzarla ya que muchas de las dudas que puedas tener serán contestadas.
+Please read this page carefully before jumping to the actual test, a lot of doubts you may have are probably answered here.
 
-## Sobre la prueba
+## About the test
 
-La prueba consiste en desarrollar una **Single Page Application** utilizando un backend (ya provisto) que se encuentra en este mismo repositorio.
+For this test what we need you to do is a **Single Page Application** that consumes a sample backend you can find on this repo under the `backend` folder.
 
-## Sobre el repositorio
+## About the repo
 
-Este repositorio contiene la siguiente estructura:
+The repo has the following folder structure:
 
 ```
 .
@@ -20,26 +20,24 @@ Este repositorio contiene la siguiente estructura:
 └── instructions
 ```
 
-En la carpeta [backend](backend) se encuentra una api desarrollada en node que funciona como backend RESTful de la aplicación que deberá ir en la carpeta [frontend](frontend).
+The [backend](backend) folder has a RESTful API developed in node that should be consumed by your application in the [frontend](frontend) directory.
 
-La carpeta [instructions](instructions) contiene la letra del problema y respuestas a posibles preguntas que puedan surgir.
+The [instructions](instructions) folder has the user stories you need to implement along with some FAQ that may help you.
 
-## Cómo entregar la prueba
+## How should I deliver the test
 
-Para entregar la prueba será necesario devolver este mismo directorio con la aplicación desarrollada en la carpeta [frontend](frontend) e instrucciones para su instalación si existieren.
+You need to deliver this same repo but with your application developed into the [frontend](frontend) folder as well as installation instructions.
 
-La forma más práctica de hacerlo es crear un [fork](https://github.com/ingsw-dev/frontend-test#fork-destination-box) de este repositorio y desarrollar allí la aplicación entregando la url del nuevo repositorio una vez finalizado el desarrollo.
+The easiest way to do this is to [fork](https://github.com/ingsw-dev/frontend-test#fork-destination-box) this repo and develop the application in your own fork. Once you finish, you can just deliver the fork URL. Alternatively, you can provide a zip folder with the `frontend` folder.
 
-Otra forma de entrega es devolver este mismo directorio (en un zip) por email con la aplicación desarrollada dentro de `frontend`. 
+In any case, you should not check in or provide the `node_modules` folder or any other similar folder.
 
-En ningún caso es necesario enviar o commitear el directorio `node_modules` u otros que se provicionen automáticamente.
+We recommend having a README file on the `frontend` folder; this way reviewers have an easier job installing and running the application.
 
-Para que sea más fácil la instalación y corrección te recomendamos crear un archivo README dentro de [frontend](frontend) con los pasos para instalar y levantar la aplicación que has desarrollado.
+## Next steps
 
-## Siguientes pasos
+The next thing you should do is test the [backend app](backend), after this you can [read the user stories](instructions) and start developing the [test](frontend).
 
-Lo siguiente que debes hacer es probar que la [aplicación backend](backend) funcione correctamente, una vez hecho esto puedes [leer la letra del problema](instructions) y [comenzar a desarrollar](frontend).
-
-* [Probar backend](backend)
-* [Leer la letra del problema](instructions)
-* [Comenzar a desarrollar la app](frontend)
+* [Test backend](backend)
+* [Read user stories](instructions)
+* [start developing the app](frontend)

@@ -1,50 +1,88 @@
-# Ingenious test for candidates - Backend application
+# Prueba de Ingenious Softworks para candidatos - Aplicación de backend
 
-As you know from reading the user stories, the app you need to build is an event board. To do so, you need a backend that provides the necessary operations to list and create events. This app does exactly that.
+Como se puede [leer en la letra](../instructions) la app a desarrollar es una cartelera de eventos con funcionalidades básicas. Para ello es necesario tener un backend que provea las operaciones básicas para listar y crear nuevos eventos, esta aplicación hace exactamente eso.
 
-## Index
-* [Prerequisites](#prerequisites)
-* [Installation](#installation)
-* [Development server](#development-server)
-* [Exposed services](#exposed-services)
-* [Doubts](#doubts)
-* [Next step](#next-step)
+## Índice
+* [Pre requisitos](#pre-requisitos)
+* [Instalación](#instalación)
+* [Servidor de desarrollo](#servidor-de-desarrollo)
+* [Servicios expuestos](#servicios-expuestos)
+* [Dudas](#dudas)
+* [Siguiente paso](#siguiente-paso)
 
-## Prerequisites
+## Pre requisitos
 
-* [node](https://nodejs.org/) & [npm](https://www.npmjs.com/#getting-started)
-* Allow write access to the `backend/app/db/events` folder.
+* [node](https://nodejs.org/) & [npm (en general se instala junto con node)](https://www.npmjs.com/#getting-started)
+* Permitir escritura en el directorio `backend/app/db/events`.
 
-## Installation
+## Instalación
+
+Para instalar la aplicación simplemente hay que clonarse este repositorio, cambiarse al directorio backend `cd backend` y ejecutar el comando `npm install` para satisfacer las dependencias del proyecto.
+
+Una vez hecho esto para probar que los servicios que el backend provee funcionen correctamente podemos hacer `npm test`.
+
+Si todo sale bien veremos una salida en la consola similar a la siguiente:
 
 ```
-$> git clone git@github.com:ingsw-dev/frontend-test.git
-$> cd frontend-test/backend
-$> npm install
+$ npm test
+
+> ingsw-frontend-test@1.0.0 test /Users/cherta/workspace/ingsw/front-end-test/backend
+> node test
+
+TAP version 13
+# GET /events returns all events
+ok 1 No error
+ok 2 should be equivalent
+# GET /events/featured returns all featured events
+ok 3 No error
+ok 4 should be equivalent
+# GET /events/:id returns the correct event
+ok 5 No error
+ok 6 should be equivalent
+# GET /events/:id returns 404 when the event doesn't exists
+# POST /events creates an event and returns it with an id
+ok 7 No error
+ok 8 should be equivalent
+
+1..8
+# tests 8
+# pass  8
+
+# ok
 ```
 
-Once you have the app installed try running the tests with `npm test`. All checks should pass.
+### Resumiendo
 
-## Development server
+```
+$ git clone git@github.com:ingsw-dev/frontend-test.git
+$ cd frontend-test
+$ cd backend
+$ npm install
+$ npm test
+```
 
-To run the development server open a terminal on the `backend` folder and run `npm start`. The server should open on `http://localhost:3000`.
+## Servidor de desarrollo
 
-## Exposed services
+Para levantar el servidor de desarrollo podemos ejecutar `npm start` en el directorio `backend` y dejar esa terminal levantada.
 
-The app has the following services
+El servidor quedará levantado por defecto en `http://localhost:3000`.
 
-* [Event list](#event-list)
-* [Highlighted events](#highlighted-events)
-* [Get event by id](#get-event-by-id)
-* [Create event](#create-event)
+## Servicios expuestos
 
-### Event list
-Lists all the events
+La aplicación expone los siguientes servicios:
+
+* [Listar eventos](#listar-eventos)
+* [Eventos destacados](#eventos-destacados)
+* [Devolver evento por id](#devolver-evento-por-id)
+* [Crear evento](#crear-evento)
+
+### Listar eventos
+Lista todos los eventos que hay en el sistema
 
 #### Endpoint
 GET /events
 
-#### Response
+#### Respuesta
 ```json
 {
   "events": [
@@ -82,13 +120,13 @@ GET /events
 }
 ```
 
-### Highlighted events
-Returns the highlighted events
+### Eventos Destacados
+Devuelve los eventos destacados.
 
 #### Endpoint
 GET /events/featured
 
-#### Response
+#### Respuesta
 ```json
 {
   "events": [
@@ -111,13 +149,13 @@ GET /events/featured
 }
 ```
 
-### Get event by id
-Returns an event for the given id. In case the event doesn't exists returns a 404.
+### Devolver evento por id
+Devuelve un evento por id. En caso de que el evento no exista devuelve 404.
 
 #### Endpoint
 GET /events/:id
 
-#### Response
+#### Respuesta
 ```json
 {
   "event": {
@@ -138,13 +176,13 @@ GET /events/:id
 }
 ```
 
-### Create event
-Creates an event
+### Crear evento
+Crea un evento
 
 #### Endpoint
 POST /events
 
-#### Request
+#### Respuesta
 ```json
 {
   "event": {
@@ -164,3 +202,9 @@ POST /events
   }
 }
 ```
+
+## Doubts
+If having any doubts, you can always [email us](mailto:gchertok@ingsw.com), and we will do our best to help you.
+
+## Next step
+Once you have the backend working you can go ahead and read the [user stories](../instructions).
