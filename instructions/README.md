@@ -1,111 +1,103 @@
-# Prueba de Ingenious Softworks para candidatos - Letra
+# Ingenious test for candidates - User stories
 
-Hola **candidato**, esperamos que hayas seguido los pasos para [instalar y probar](../backend) la aplicación backend, si tienes alguna duda nos puedes enviar un email a [gchertok@ingsw.com](mailto: gchertok@ingsw.com).
+Hello **candidate**, these are the test user stories. Remember installing and testing [the backend application](..backend) before jumping into the stories. If something fails, please send us an email to [gchertok@ingsw.com](mailto:gchertok@ingsw.com).
 
-## Índice
-* [Letra](#letra)
-* [Requerimientos no funcionales](#requerimientos-no-funcionales)
-* [Evaluación](#evaluación)
-* [Preguntas Frecuentes](#faq)
-* [Siguiente paso](#siguiente-paso)
+## Index
+* [The app](#the-app)
+* [User stories](#user-stories)
+* [Non functional requirements](#non-functional-requirements)
+* [Evaluation](#evaluation)
+* [FAQ](#faq)
+* [Next step](#next-step)
 
-## Letra
+## The app
+We will develop a Single Page Application that lists and creates events. The application should be a simple event board with limited functionality.
 
-Se pide desarrollar una Single Page Application que lista y permite crear eventos. El sistema final será una cartelera de eventos muy simple.
+To develop the board, we provide a simple [backend](../backend) with all the needed services already implemented.
 
-Para desarrollarla proveemos un [backend](../backend) con todos los servicios necesarios.
+## User stories
 
-## Historias de usuario
+### Event list
+As a user on the homepage, I should be able to see a list of events sorted by date.
 
-### Listar eventos
+![Event list](images/event-list.png)
 
-Como un usuario debo ver un listado inicial de eventos ordenados por fecha.
+### Share event
+As a user on the homepage or the event detail page, I should be able to click on the share icon and share the event on Twitter.
 
-![Listar Eventos](images/event-list.png)
+The message should read "I'm going to EVENT_NAME @ EVENT_DATE."
 
-### Compartir evento
+![Share event](images/share-event.png)
 
-Como un usuario haciendo click en el botón compartir de un evento debo poder compartir el mismo en twitter.
+### Event detail
 
-El mensaje de twitter deberá ser el siguiente: "Iré al NOMBRE DEL EVENTO @ FECHA DEL EVENTO LINK DEL EVENTO".
+As a user on the homepage, I should click on an event and be redirected to the event detail to see all the other event attributes.
 
-![Compartir Evento](images/share-event.png)
+![Event detail](images/event-detail.png)
 
-### Ver detalle del evento
+### Highlighted events
 
-Como un usuario haciendo click en un evento debo navegar a otra página de detalle que liste, además del nombre del evento el resto de sus atributos.
+As a user on the homepage, I should see on the right side a list of featured or highlighted events.
 
-![Detalle de Evento](images/event-detail.png)
+![Featured events](images/highlighted-events.png)
 
-### Listar eventos destacados
+### Create event
 
-Como un usuario en la página principal debo ver un listado de eventos destacados.
+As a user on the homepage, I should be able to create an event. The event fields should be:
 
-![Eventos Destacados](images/highlighted-events.png)
+* Title
+* Description
+* Event dates
+* Place
+* Picture
 
-### Crear evento
+![Create event](images/new-event.png)
 
-Como un usuario debería poder crear un evento con todos sus campos.
+## Non functional requirements
 
-* Título
-* Descripción
-* Lista de fechas
-* Lugar
-* Imágen
+The app should be written in any of the following technologies:
 
-![Crear Evento](images/new-event.png)
-
-## Requerimientos no funcionales
-
-La aplicación cliente deberá estar escrita en alguna de las siguientes tecnologías:
-
-* JavaScript vanilla
+* Vanilla JS
 * Ember
 * Angular
 * React
 * Vue
-* Cualquier otro framework JS
+* Any other JS framework
 
-No se especifica ninguna versión mínima para las mismas pero es de esperarse que sean versiones estables y soportadas, no es necesario hacer la aplicación en el último release de cada tecnología pero si es un release con soporte.
+There's no need to use the latest version of the tools, but we expect stable and supported versions to be used.
 
-## Evaluación
+## Evaluation
 
-La prueba trata de evaluar como un candidato maneja cierta tecnología pero además cómo estructura su código y cómo resuelve los problemas que se le presentan. 
+We will evaluate the proficiency of the selected technology or framework, but most importantly we will evaluate how you structure your code and how you organize the overall solution.
 
-Con esto queremos decir que si bien la tecnología en cual se realice la aplicación es importante, también lo es desarrollarla con una herramienta con la que el candidato se sienta cómodo y pueda ser eficiente.
-
-De nada sirve entregar una aplicación "andando" en React que no utilice las características del framework, el mismo caso se da si se eligen otros frameworks.
+When selecting the framework/ libraries try choosing something you are comfortable with. It's worth nothing to create a "working" React app without using the framework characteristics like passing callbacks on props, for example. The same goes for any other framework/ library you may choose.
 
 ## FAQ
 
-### Puedo modificar la aplicación backend para hacer cierta funcionalidad?
+### Can I make changes to the backend application to add extra features?
 
-Sí, es posible modificar la aplicación backend. Recuerda enviarnos la versión modificada para que podamos probarla.
+Yes, remember sending the modified version.
 
-### Hay algo en la letra que no quedó claro pero tengo dificultades para comunicarse por email
+### There's something on the user stories I don't understand
 
-Si estás en esta situación asume lo que te sea más cómodo y continúa con la prueba. Si es posible deja constancia de la decisión tomada para poder evaluar la prueba en base a ella.
+If you have a doubt and can't reach us to clarify it make the assumption that feels more natural, document it and move on. We will evaluate based on that assumption.
 
-Por ejemplo, si no queda claro qué atributos de evento debes listar en la página principal asume unos y continúa adelante.
+For example, if you don't know which event attribute you should list on the homepage choose some attributes and move on.
 
-Recuerda que es una prueba para evaluar tu conocimiento no un trabajo para un cliente real.
+### I have an error running the backend
 
-### Tengo un error corriendo la aplicación backend
+The backend application is tested, and it should work, but in some weird scenarios (never happened before) it may fail. Please [write us an email](mailto:gchertok@ingsw.com) to let us know, and so we can help you move along with the test.
 
-Lo mejor que puedes hacer es enviarnos un correo electrónico a [gchertok@ingsw.com](mailto: gchertok@ingsw.com) y trataremos de solucionarlo lo antes posible.
+### I have some extra time to add more features
 
-### No entiendo lo que se pide en la letra
+Adding extra features is great, and we will look at them as well, but the best thing you can do, if having extra time is to complete as much as you can the features that are requested already. For example, try adding tests or more documentation, we will value that more than having a user management module on the app.
 
-De nuevo, lo ideal es enviarnos un correo electrónico a [gchertok@ingsw.com](mailto: gchertok@ingsw.com) y trataremos de aclarar la duda.
+### I know more than one technology, which one I choose
 
-### Me sobró tiempo y quisiera agregarle funcionalidades a la aplicación
+The one you feel more comfortable with.
 
-Si bien las funcionalidades extra son un plus preferimos que las presentes estén lo más completas posibles. Si te ha sobrado tiempo sería interesante que agregaras **tests** y escribieras **documentación** sobre la app que has desarrollado.
+Don't try to use the test to learn a new technology because it's more likely you will be making learning mistakes.
 
-### Soy proficiente en más de una de las tecnologías mencionadas, cuál elijo?
+## Next step
 
-Si dudas en cual tecnología desarrollar y eres capaz de manejar más de una de ellas nuestra recomendación es que desarrolles con la que te seintas más cómodo.
-
-## Siguiente paso
-
-Ya puedes empezar a desarrollar la aplicación dentro del directorio `frontend`. Mucha suerte!
+You can now start developing the application on the `frontend` folder. Good luck!
