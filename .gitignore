@@ -1,2 +1,5 @@
 .DS_Store
 backend/node_modules
+.idea
+yarn.lock
+package-lock.json

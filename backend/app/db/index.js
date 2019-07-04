@@ -49,7 +49,7 @@ function lastId () {
       return Number(fileName.split('.')[0]);
     })
     .sort(function (a, b) {
-      return b > a;
+      return b - a;
     })[0];
 }
 
